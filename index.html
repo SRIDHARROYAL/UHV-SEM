@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHV SEM Important Questions</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .chatgpt-link {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .chatgpt-link a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .chatgpt-link a:hover {
+            background-color: #3e8e41;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .unit {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+        .unit-header {
+            background-color: #fda085;
+            padding: 15px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+        }
+        .unit-header:hover {
+            background-color: #fc6e51;
+        }
+        .unit-header::after {
+            content: '▼';
+            transition: transform 0.3s;
+        }
+        .unit.open .unit-header::after {
+            transform: rotate(180deg);
+        }
+        .unit-questions {
+            background-color: #fafafa;
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 15px;
+            transition: max-height 0.5s ease, padding 0.3s ease;
+        }
+        .unit.open .unit-questions {
+            max-height: 1000px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .question {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+            font-size: 0.95em;
+        }
+        .question:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .unit-header {
+                font-size: 1em;
+                padding: 12px;
+            }
+            .chatgpt-link a {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>UHV SEM Important Questions</h1>
+
+    <!-- ChatGPT Link Section -->
+    <div class="chatgpt-link">
+        <a href="https://chat.openai.com/" target="_blank" aria-label="Find answers on ChatGPT">Find Answers to the Questions on ChatGPT</a>
+    </div>
+
+    <!-- Unit 1 -->
+    <div class="unit">
+        <div class="unit-header" onclick="toggleUnit(this)">Unit 1: Introduction to Value Education</div>
+        <div class="unit-questions">
+            <div class="question">What is value education, and why is there a need for value education?</div>
+            <div class="question">What is the process of value education, and how does self-exploration play a role in it?</div>
+            <div class="question">What are the basic human aspirations, and how do right understanding, relationships, and physical facilities contribute to achieving them?</div>
+            <div class="question">Define self-exploration. What is its purpose, and what are the mechanisms involved, like natural acceptance and experiential validation?</div>
+            <div class="question">What is the difference between animal consciousness and human consciousness?</div>
+            <div class="question">Explain the difference between Sukh (happiness) and Suvidha (comforts). How does each impact human behavior?</div>
+        </div>
+    </div>
+
+    <!-- Unit 2 -->
+    <div class="unit">
+        <div class="unit-header" onclick="toggleUnit(this)">Unit 2: Harmony in the Human Being</div>
+        <div class="unit-questions">
+            <div class="question">Distinguish between the needs of the self and the needs of the body. How are they different in nature and continuity?</div>
+            <div class="question">What does it mean that the human being is a co-existence of the self (consciousness) and the body (physical)?</div>
+            <div class="question">Describe the activities of the self, including imaging, analyzing, and selecting/tasting. How are these related to desires, thoughts, and expectations?</div>
+            <div class="question">How can harmony between the self and the body be achieved, and why is it important for human well-being?</div>
+            <div class="question">What is self-regulation, and how does it contribute to the health and well-being of an individual?</div>
+        </div>
+    </div>
+
+    <!-- Unit 3 -->
+    <div class="unit">
+        <div class="unit-header" onclick="toggleUnit(this)">Unit 3: Harmony in the Family and Society</div>
+        <div class="unit-questions">
+            <div class="question">What is the importance of harmony in the family, and how does it serve as the foundation for human relationships?</div>
+            <div class="question">Explain the relationship between Self ('I') and Self ('I') and how it differs from body-based relationships.</div>
+            <div class="question">What are the nine essential feelings (values) in human relationships, and why are they important?</div>
+            <div class="question">Define trust as the foundation of relationships. How does trust relate to the intention and competence of individuals?</div>
+            <div class="question">What is respect in human relationships, and how does right evaluation differ from over, under, or otherwise evaluation?</div>
+            <div class="question">Discuss the significance of affection (sneha) and how it develops from trust and respect.</div>
+            <div class="question">Describe the feelings of care (mamatā) and guidance (vātsalya) in relationships. How do these contribute to harmony in the family?</div>
+            <div class="question">Explain the concepts of reverence (shraddhā) and glory (gaurav) and how they relate to recognizing and honoring the efforts and excellence of others.</div>
+            <div class="question">What is gratitude (kritagyatā), and why is it essential to acknowledge others' contributions to our well-being?</div>
+            <div class="question">What is the complete value of love in relationships, and how does it encompass all other feelings in a harmonious relationship?</div>
+        </div>
+    </div>
+
+    <!-- Unit 4 -->
+    <div class="unit">
+        <div class="unit-header" onclick="toggleUnit(this)">Unit 4: Harmony in Nature/Existence</div>
+        <div class="unit-questions">
+            <div class="question">What are the four orders of nature, and how do they interact with each other to maintain harmony in existence?</div>
+            <div class="question">How does interconnectedness and mutual fulfillment among the four orders of nature contribute to universal harmony?</div>
+            <div class="question">What is meant by the 'innateness' (dhaarna) of nature, and how does it manifest in each order?</div>
+            <div class="question">How do the natural characteristics (svabhava) of material order help humans live better lives?</div>
+            <div class="question">Explain how harmony with nature can be achieved and why it is essential for the well-being of society.</div>
+        </div>
+    </div>
+
+    <!-- Unit 5 -->
+    <div class="unit">
+        <div class="unit-header" onclick="toggleUnit(this)">Unit 5: Implications of Holistic Understanding – Professional Ethics</div>
+        <div class="unit-questions">
+            <div class="question">What is ethical human conduct, and how does it relate to the natural acceptance of human values?</div>
+            <div class="question">How does a humanistic approach to education contribute to developing responsible individuals in society?</div>
+            <div class="question">What role does professional ethics play in promoting harmony in society, and how can individuals contribute to this through their professions?</div>
+            <div class="question">How can individuals contribute to societal harmony and the universal human order through personal development and understanding of universal human values?</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleUnit(headerElement) {
+        const unit = headerElement.parentElement;
+        unit.classList.toggle("open");
+    }
+</script>
+
+</body>
+</html>
